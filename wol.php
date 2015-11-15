@@ -10,8 +10,6 @@
  * eth0 以外のインターフェース以外を利用する場合は、$srcEth を変更してください。
  *
  * *****/
-
-
 class WOL {
 
 	public $srcEth = 'eth0';
@@ -43,17 +41,3 @@ class WOL {
 	}
 }
 
-/* Test 
-$WOL = new WOL;
-$WOL->run('ZZ-ZZ-ZZ-ZZ-ZZ-ZZ');
-for( $i = 0 ; $i <= 5 ; $i++ ){
-	if($WOL->ping('192.168.0.1')){
-		echo "Success.";
-		exit ;
-	}
-	echo 'retry...'. $i . "\n";
-	sleep(5);
-}
-echo "false.";
-exit;
-*/
